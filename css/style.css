@@ -1,8 +1,16 @@
 
+html
+{
+    background-color: #09042f;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
 h1
 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    color: white;
 }
 
 .stage
@@ -16,6 +24,11 @@ h1
     background-color: beige;
     border: 2px solid gray;
     display: inline-block;
+}
+
+.square:hover
+{
+    background-color: lightgray;
 }
 
 .o
@@ -51,3 +64,93 @@ position: relative;
     left: 0;
     right: 0;
 }
+
+.botao
+{
+    margin-top: 20px;
+    text-align: center;
+}
+
+button
+{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px; 
+}
+
+.botao :hover
+{
+    background-color: lightgray;
+}
+
+@media (max-width: 340px)
+{
+    .square
+    {
+        width: 80px;
+        height: 80px;
+        background-color: beige;
+        border: 2px solid gray;
+        display: inline-block;
+    }
+    .o:after
+    {
+        position: absolute;
+        content: "\1F525";
+        font-size: 50px;
+        line-height: 80px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .x:after
+    {
+        position: absolute;
+        content: "\1F4A7";
+        font-size: 50px;
+        line-height: 80px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media (max-width: 280px)
+{
+    .square
+    {
+        width: 60px;
+        height: 60px;
+        background-color: beige;
+        border: 2px solid gray;
+        display: inline-block;
+    }
+    .o:after
+    {
+        position: absolute;
+        content: "\1F525";
+        font-size: 50px;
+        line-height: 60px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .x:after
+    {
+        position: absolute;
+        content: "\1F4A7";
+        font-size: 50px;
+        line-height: 60px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+
